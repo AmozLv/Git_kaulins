@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class Kaulins {
 	static void mestKaulinu(int reizes) {
-		int skaitlis;
+		int skaitlis, max=0;
 		Random rand = new Random();
 		for(int i=1; i<=reizes; i++) {
 			skaitlis = rand.nextInt(6)+1;	
 			System.out.println("Uzkrita skaitlis "+skaitlis);
+			if(max<skaitlis) max = skaitlis;
 		}
 	}
 	
